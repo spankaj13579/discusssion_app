@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee8e759db7.js" crossorigin="anonymous"></script>
+    <title>Discussion app</title>
+</head>
+<body>
+    <h1 class="discussionPortal">Discussion Portal</h1>
+    <div class="container">
+        <div class="left">
+            <div class="buttonsLeft">
+                <input type="button" value="New Questions Form" id="NewQuestionsForm">
+                <input type="text" id="search" placeholder="search questions..." oninput="searching()">
+                <!-- questions here start -->
+                <ul class="content">
+                    <!-- <li class="questionContent">
+                        <div class="action">
+                            <div class="line">
+                                
+                                <i class="fa-regular fa-heart" style="color: #000000;" class="faRegular"></i>
+                            <i class="fa-solid fa-heart" style="color: #bb1b1b;" class= 'faHeart'></i>
+                            <p class= time>1</p>
+                            </div>
+                            <div class="vote">
+                                <i class="fa-solid fa-chevron-up" style="color: #000000;" class='faChevronup'></i>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;" class='faChevrondown'></i>  
+                            <p class= voteNo>0</p>
+                            </div>
+                             
+                        </div>
+                        
+                        <h3>question 1</h3>
+                        <p>Lorem ipsum dolor sit.</p>
+                        
+                    </li> -->
+                </ul>
+                <!-- questions end -->
+            </div>
+        </div>
+        <div class="right">
+            <!-- question section  -->
+            <div id="newQuestions" class="">
+                <h1>
+                    Welcome to discussion Portal!
+                </h1>
+                <p>
+                    enter a subject and question to get started
+                </p>
+                <input type="text" id="newQuestionSubject" placeholder="Subject">
+                <textarea id="newQuestionQuestion" placeholder="Question"></textarea>
+                <input type="button" value="submit" id="newQuestionSubmit">
+            </div>
+            <!-- question section ends -->
+            <!-- resolve section starts -->
+
+            <div id="resolve" class="hide">
+                <div class="resolveQuestion">
+                    <h3 class="grey">Question</h3>
+
+                    <div class="questionFromLi">
+                        <h4 id="resolveSubjectTitle">
+                            JSON & web storage
+                        </h4>
+                        <p id="resolvessubjectQuestion">
+                            how to use web store
+                        </p>
+                    </div>
+                    <input type="button" value="resolve" id="resolved">
+                </div>
+                <div class="response">
+                    <h3 class="grey">Response</h3>
+                    <ul class="responseUl">
+                        <!-- <li>
+                            <div>
+                                <h4 id="repliedUserName">Amit</h4>
+                            <p id="repliedUserReply">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, accusamus!</p>
+                            </div>
+                            <div class="voteDivResponse">
+                                <i class="fa-solid fa-chevron-up" style="color: #000000;" class='faChevronup'></i>
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;" class='faChevrondown'></i>  
+                            <p class= responseVal>0</p>
+                            </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="addResponse">
+                    <h3 class="grey">
+                        Add Response
+                    </h3>
+                    <input type="text" id="enterName" placeholder="Enter Name">
+                    <textarea placeholder="Enter Comment" id="Commentss"></textarea>
+                    <input type="button" value="submit" id="submitComment">
+                </div>
+            </div>
+
+            <!-- resolve sectione ends -->
+
+
+            <script src="index.js"></script>
+            
+        </div>
+    </div>
+</body>
+</html>
